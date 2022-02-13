@@ -1,0 +1,13 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info {
+  display: flex;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+}
