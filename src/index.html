@@ -13,12 +13,20 @@
 <body>
   <!-- Так добавляются фрагменты в главные HTML-файлы страниц.
   <include src="./partials/example.html"></include> -->
-  <include src="./partials/form.html"></include>
+  <section class="section">
+    <include src="./partials/form.html"></include>
+  </section>
 
-  <div class="gallery">
-    <!-- Карточки изображений -->
-  </div>
-  <button type="button" class="load-more">Load more</button>
+  <section class="section">
+    <div class="gallery">
+      <!-- Карточки изображений -->
+    </div>
+  </section>
+
+  <section class="section">
+    <button type="button" class="load-more">Load more</button>
+  </section>
+
 
   <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
   <script src="./index.js"></script>

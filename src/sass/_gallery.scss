@@ -1,6 +1,11 @@
 .gallery {
+  padding-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .info {
@@ -10,4 +15,5 @@
 .info-item {
   display: flex;
   flex-direction: column;
+  font-size: 9px;
 }
