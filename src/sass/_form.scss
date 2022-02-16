@@ -1,6 +1,5 @@
 #search-form {
   background-color: navy;
-
   justify-content: center;
   padding: 0.5em;
   position: fixed;
@@ -10,5 +9,11 @@
 }
 
 #search-form > * {
-  border-radius: 0.25em;
+  padding: 0.5em;
+  border-width: 0;
+  margin: 0;
 }
+
+// .search-form-input {
+//   padding: 0.5em;
+// }

@@ -8,12 +8,31 @@
   justify-content: space-evenly;
 }
 
+.photo-card {
+  border: 1px solid #eeeeee;
+  margin-bottom: 1em;
+  box-shadow: 0 0.25em 0.25em #eeeeee;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.photo-card:hover {
+  border-color: navy;
+}
+
 .info {
   display: flex;
+  justify-content: space-around;
+  padding: 1em;
 }
 
 .info-item {
   display: flex;
   flex-direction: column;
-  font-size: 9px;
+  align-items: center;
 }
+
+// .info-item:not(:last-child) {
+//   padding-bottom: 0.5em;
+// }
