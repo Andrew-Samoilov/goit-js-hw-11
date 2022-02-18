@@ -5,9 +5,10 @@ import Notiflix from 'notiflix';
 import SimpleLightbox from "simplelightbox";
 import imageTpl from './templates/image.hbs';
 import getRefs from './js/get-refs';
+const refs = getRefs();
 
 Notiflix.Notify.info(`Hi from Notify.`,);
-const refs = getRefs();
+
 refs.imgForm.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(evt) {
