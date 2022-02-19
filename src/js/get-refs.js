@@ -3,7 +3,7 @@ export default function getRefs() {
     imgForm: document.querySelector('#search-form'),
     imgField: document.querySelector('input[name="searchQuery"]'),
     imgGallery: document.querySelector('.gallery'),
-    // btnLoadMore: document.querySelector('.load-more'),
+    btnLoadMore: document.querySelector('.load-more'),
 
   };
 }

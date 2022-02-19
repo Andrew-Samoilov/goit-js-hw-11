@@ -7,6 +7,7 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 import imageTpl from './templates/image.hbs';
 import getRefs from './js/get-refs';
 const refs = getRefs();
+refs.btnLoadMore.hidden = true;
 
 Notiflix.Notify.info(`Hi from Notify.`,);
 
@@ -21,6 +22,8 @@ function onFormSubmit(evt) {
         .then(renderImages)
         .catch(onFetchError)
         .finally(() => Notiflix.Notify.info(`finalize it`));
+
+    refs.btnLoadMore.hidden = false;
 }
 
 function onFetchError(error) {
