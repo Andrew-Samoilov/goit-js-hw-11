@@ -2,7 +2,7 @@ import './sass/main.scss';
 import imgApi from './js/fetch-images';
 import { fetchImages } from './js/fetch-images';
 import { resetPageNumber } from './js/fetch-images';
-const axios = require('axios').default;
+
 import Notiflix from 'notiflix';
 import SimpleLightbox from "simplelightbox";
 import 'simplelightbox/dist/simple-lightbox.min.css';

@@ -1,3 +1,4 @@
+const axios = require('axios').default;
 let pageGallery = 1;
 
 export async function fetchImages(imag) {
@@ -12,9 +13,12 @@ export async function fetchImages(imag) {
     console.log(` inside function fetchImages ${imag}`);
     console.log(`  pageGallery ${pageGallery++}`);
 
-    return await fetch(`${BASE_URL}?key=${MY_API_KEY}&q=${imag}&${options}`)
-        .then(response => response.json(),
-    );
+    const axiosResponse = await axios.get(`${BASE_URL}?key=${MY_API_KEY}&q=${imag}&${options}`);
+    return axiosResponse.data;
+
+    // return await fetch(`${BASE_URL}?key=${MY_API_KEY}&q=${imag}&${options}`)
+    //     .then(response => response.json(),
+    // );
 }
 
 export function resetPageNumber() {
