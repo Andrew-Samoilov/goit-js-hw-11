@@ -1,5 +1,4 @@
 import './sass/main.scss';
-import imgApi from './js/fetch-images';
 import { fetchImages } from './js/fetch-images';
 import { resetPageNumber } from './js/fetch-images';
 import Notiflix from 'notiflix';
@@ -55,7 +54,6 @@ function renderImages(images) {
         const element = images.hits[index];
         markup.push(imageTpl(element));
     }
-
     refs.imgGallery.innerHTML += markup.join('');
 
     var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
