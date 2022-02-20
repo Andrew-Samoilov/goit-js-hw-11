@@ -4,6 +4,5 @@ export default function getRefs() {
     imgField: document.querySelector('input[name="searchQuery"]'),
     imgGallery: document.querySelector('.gallery'),
     btnLoadMore: document.querySelector('.load-more'),
-
   };
 }
