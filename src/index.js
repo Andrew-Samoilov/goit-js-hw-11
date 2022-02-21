@@ -19,7 +19,7 @@ refs.btnLoadMore.addEventListener('click', onLoadMore);
 function onFormSubmit(evt) {
     evt.preventDefault();
     resetPageNumber();
-
+    refs.imgGallery.innerHTML = '';
     fetchImages(refs.imgField.value)
         .then(renderImages)
         .catch(onFetchError);
